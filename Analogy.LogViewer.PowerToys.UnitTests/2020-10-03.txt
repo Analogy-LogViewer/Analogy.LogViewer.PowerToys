@@ -1,0 +1,340 @@
+2020-10-03 10:33:41.7345|INFO|PowerLauncher.App.OnStartup|
+	Message: Begin PowerToys Run startup ----------------------------------------------------
+	Area: PowerLauncher.App.OnStartup
+	Source Path: S:\src\modules\launcher\PowerLauncher\App.xaml.cs::85
+
+2020-10-03 10:33:41.7582|INFO|PowerLauncher.App.OnStartup|
+	Message: Runtime info:
+Version: 0.23.0.0
+OS Version: Microsoft Windows NT 10.0.18363.0
+IntPtr Length: 8
+x64: True
+	Area: PowerLauncher.App.OnStartup
+	Source Path: S:\src\modules\launcher\PowerLauncher\App.xaml.cs::86
+
+2020-10-03 10:33:42.1684|INFO|Wox.Infrastructure.Storage.BinaryStorage`1[[System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].TryLoad|
+	Message: Deleting cached data at <C:\Users\Lior\AppData\Local\Microsoft\PowerToys\PowerToys Run\Cache\Image.cache>
+	Area: Wox.Infrastructure.Storage.BinaryStorage`1[System.Collections.Generic.Dictionary`2[System.String,System.Int32]].TryLoad
+	Source Path: S:\src\modules\launcher\Wox.Infrastructure\Storage\BinaryStorage`1.cs::48
+
+2020-10-03 10:33:42.1684|INFO|Wox.Infrastructure.Storage.BinaryStorage`1[[System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].TryLoad|
+	Message: Cache file not exist, load default data
+	Area: Wox.Infrastructure.Storage.BinaryStorage`1[System.Collections.Generic.Dictionary`2[System.String,System.Int32]].TryLoad
+	Source Path: S:\src\modules\launcher\Wox.Infrastructure\Storage\BinaryStorage`1.cs::70
+
+2020-10-03 10:33:42.1684|INFO|Wox.Infrastructure.Storage.BinaryStorage`1[[System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].Save|
+	Message: Saving cached data at <C:\Users\Lior\AppData\Local\Microsoft\PowerToys\PowerToys Run\Cache\Image.cache>
+	Area: Wox.Infrastructure.Storage.BinaryStorage`1[System.Collections.Generic.Dictionary`2[System.String,System.Int32]].Save
+	Source Path: S:\src\modules\launcher\Wox.Infrastructure\Storage\BinaryStorage`1.cs::140
+
+2020-10-03 10:33:42.2960|INFO|Wox.Infrastructure.Storage.WoxJsonStorage`1[[Wox.Infrastructure.UserSettings.Settings, Wox.Infrastructure, Version=0.23.0.0, Culture=neutral, PublicKeyToken=null]].Load|
+	Message: Deleting cached data at <C:\Users\Lior\AppData\Local\Microsoft\PowerToys\PowerToys Run\Settings\Settings.json>
+	Area: Wox.Infrastructure.Storage.WoxJsonStorage`1[Wox.Infrastructure.UserSettings.Settings].Load
+	Source Path: S:\src\modules\launcher\Wox.Infrastructure\Storage\JsonStorage`1.cs::54
+
+2020-10-03 10:33:42.3129|INFO|Wox.Infrastructure.Stopwatch.Normal|
+	Message: |ImageLoader.Initialize|Preload images cost <40ms>
+	Area: Wox.Infrastructure.Stopwatch.Normal
+	Source Path: S:\src\modules\launcher\Wox.Infrastructure\Stopwatch.cs::40
+
+2020-10-03 10:33:42.3129|INFO|Wox.Infrastructure.Image.ImageLoader+<>c.Initialize|
+	Message: Number of preload images is <0>, Images Number: 4, Unique Items 4
+	Area: Wox.Infrastructure.Image.ImageLoader+<>c.Initialize
+	Source Path: S:\src\modules\launcher\Wox.Infrastructure\Image\ImageLoader.cs::67
+
+2020-10-03 10:33:42.4214|INFO|Wox.Infrastructure.Storage.WoxJsonStorage`1[[Wox.Infrastructure.UserSettings.Settings, Wox.Infrastructure, Version=0.23.0.0, Culture=neutral, PublicKeyToken=null]].Save|
+	Message: Saving cached data at <C:\Users\Lior\AppData\Local\Microsoft\PowerToys\PowerToys Run\Settings\Settings.json>
+	Area: Wox.Infrastructure.Storage.WoxJsonStorage`1[Wox.Infrastructure.UserSettings.Settings].Save
+	Source Path: S:\src\modules\launcher\Wox.Infrastructure\Storage\JsonStorage`1.cs::127
+
+2020-10-03 10:33:42.4214|INFO|Wox.Infrastructure.Storage.BinaryStorage`1[[System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String[][], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].TryLoad|
+	Message: Deleting cached data at <C:\Users\Lior\AppData\Local\Microsoft\PowerToys\PowerToys Run\Cache\Pinyin.cache>
+	Area: Wox.Infrastructure.Storage.BinaryStorage`1[System.Collections.Generic.Dictionary`2[System.String,System.String[][]]].TryLoad
+	Source Path: S:\src\modules\launcher\Wox.Infrastructure\Storage\BinaryStorage`1.cs::48
+
+2020-10-03 10:33:42.4214|INFO|Wox.Infrastructure.Storage.BinaryStorage`1[[System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String[][], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].TryLoad|
+	Message: Cache file not exist, load default data
+	Area: Wox.Infrastructure.Storage.BinaryStorage`1[System.Collections.Generic.Dictionary`2[System.String,System.String[][]]].TryLoad
+	Source Path: S:\src\modules\launcher\Wox.Infrastructure\Storage\BinaryStorage`1.cs::70
+
+2020-10-03 10:33:42.4214|INFO|Wox.Infrastructure.Storage.BinaryStorage`1[[System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String[][], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].Save|
+	Message: Saving cached data at <C:\Users\Lior\AppData\Local\Microsoft\PowerToys\PowerToys Run\Cache\Pinyin.cache>
+	Area: Wox.Infrastructure.Storage.BinaryStorage`1[System.Collections.Generic.Dictionary`2[System.String,System.String[][]]].Save
+	Source Path: S:\src\modules\launcher\Wox.Infrastructure\Storage\BinaryStorage`1.cs::140
+
+2020-10-03 10:33:42.4576|INFO|Wox.Infrastructure.Stopwatch.Normal|
+	Message: |Wox.Infrastructure.Alphabet.Initialize|Preload pinyin cache <35ms>
+	Area: Wox.Infrastructure.Stopwatch.Normal
+	Source Path: S:\src\modules\launcher\Wox.Infrastructure\Stopwatch.cs::40
+
+2020-10-03 10:33:42.4576|INFO|Wox.Infrastructure.Alphabet.InitializePinyinHelpers|
+	Message: Number of preload pinyin combination<0>
+	Area: Wox.Infrastructure.Alphabet.InitializePinyinHelpers
+	Source Path: S:\src\modules\launcher\Wox.Infrastructure\Alphabet.cs::44
+
+2020-10-03 10:33:42.6438|INFO|Wox.Infrastructure.Storage.PluginJsonStorage`1[[Microsoft.Plugin.Program.ProgramPluginSettings, Microsoft.Plugin.Program, Version=0.23.0.0, Culture=neutral, PublicKeyToken=null]].Load|
+	Message: Deleting cached data at <C:\Users\Lior\AppData\Local\Microsoft\PowerToys\PowerToys Run\Settings\Plugins\Microsoft.Plugin.Program\ProgramPluginSettings.json>
+	Area: Wox.Infrastructure.Storage.PluginJsonStorage`1[Microsoft.Plugin.Program.ProgramPluginSettings].Load
+	Source Path: S:\src\modules\launcher\Wox.Infrastructure\Storage\JsonStorage`1.cs::54
+
+2020-10-03 10:33:42.6527|INFO|Wox.Infrastructure.Storage.PluginJsonStorage`1[[Microsoft.Plugin.Program.ProgramPluginSettings, Microsoft.Plugin.Program, Version=0.23.0.0, Culture=neutral, PublicKeyToken=null]].Save|
+	Message: Saving cached data at <C:\Users\Lior\AppData\Local\Microsoft\PowerToys\PowerToys Run\Settings\Plugins\Microsoft.Plugin.Program\ProgramPluginSettings.json>
+	Area: Wox.Infrastructure.Storage.PluginJsonStorage`1[Microsoft.Plugin.Program.ProgramPluginSettings].Save
+	Source Path: S:\src\modules\launcher\Wox.Infrastructure\Storage\JsonStorage`1.cs::127
+
+2020-10-03 10:33:43.1384|ERROR|Microsoft.Plugin.Program.Programs.Win32Program.LnkProgram|
+	Message: 	Error status: KNOWN
+		Program path: C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Accessories\Windows Media Player.lnk
+		Exception thrown in called method: Void GetDescription(System.Text.StringBuilder, Int32)
+		Possible interpretation of the error: An unexpected error occurred in the calling method LnkProgram
+		Possible resolution: Can be ignored and Wox should still continue, however the program may not be loaded
+	Area: Microsoft.Plugin.Program.Programs.Win32Program.LnkProgram
+	Source Path: S:\src\modules\launcher\Plugins\Microsoft.Plugin.Program\Programs\Win32Program.cs::475
+
+2020-10-03 10:33:43.1384|ERROR|Microsoft.Plugin.Program.Programs.Win32Program.LnkProgram|-------------------------- Begin exception --------------------------
+2020-10-03 10:33:43.1384|ERROR|Microsoft.Plugin.Program.Programs.Win32Program.LnkProgram|
+	Message:
+	 	Error status: KNOWN
+		Program path: C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Accessories\Windows Media Player.lnk
+		Exception thrown in called method: Void GetDescription(System.Text.StringBuilder, Int32)
+		Possible interpretation of the error: An unexpected error occurred in the calling method LnkProgram
+		Possible resolution: Can be ignored and Wox should still continue, however the program may not be loaded
+2020-10-03 10:33:43.1817|ERROR|Microsoft.Plugin.Program.Programs.Win32Program.LnkProgram|
+	Exception full name:
+	 <System.Runtime.InteropServices.COMException>
+	Exception message:
+	 <Error HRESULT E_FAIL has been returned from a call to a COM component.>
+	Exception stack trace:
+	 <   at Microsoft.Plugin.Program.Programs.ShellLinkHelper.IShellLinkW.GetDescription(StringBuilder pszName, Int32 cchMaxName)
+   at Microsoft.Plugin.Program.Programs.ShellLinkHelper.RetrieveTargetPath(String path)
+   at Microsoft.Plugin.Program.Programs.Win32Program.LnkProgram(String path)>
+	Exception source:
+	 <Microsoft.Plugin.Program>
+	Exception target site:
+	 <Void GetDescription(System.Text.StringBuilder, Int32)>
+	Exception HResult:
+	 <-2147467259>
+2020-10-03 10:33:43.1817|ERROR|Microsoft.Plugin.Program.Programs.Win32Program.LnkProgram|-------------------------- End exception --------------------------
+2020-10-03 10:33:43.2666|ERROR|Microsoft.Plugin.Program.Programs.PackageWrapper.GetWrapperFromPackage|
+	Message: 	Error status: UNKNOWN
+		Program path: Path could not be determined
+		Exception thrown in called method: Windows.Storage.StorageFolder get_InstalledLocation()
+		Possible interpretation of the error: Exception app.a9e6764a4-b5d1-42df-aba7-39839a81c78a
+		Possible resolution: Not yet known
+	Area: Microsoft.Plugin.Program.Programs.PackageWrapper.GetWrapperFromPackage
+	Source Path: S:\src\modules\launcher\Plugins\Microsoft.Plugin.Program\Programs\PackageWrapper.cs::55
+
+2020-10-03 10:33:43.2666|ERROR|Microsoft.Plugin.Program.Programs.PackageWrapper.GetWrapperFromPackage|-------------------------- Begin exception --------------------------
+2020-10-03 10:33:43.2666|ERROR|Microsoft.Plugin.Program.Programs.PackageWrapper.GetWrapperFromPackage|
+	Message:
+	 	Error status: UNKNOWN
+		Program path: Path could not be determined
+		Exception thrown in called method: Windows.Storage.StorageFolder get_InstalledLocation()
+		Possible interpretation of the error: Exception app.a9e6764a4-b5d1-42df-aba7-39839a81c78a
+		Possible resolution: Not yet known
+2020-10-03 10:33:43.2764|ERROR|Microsoft.Plugin.Program.Programs.PackageWrapper.GetWrapperFromPackage|
+	Exception full name:
+	 <System.IO.FileNotFoundException>
+	Exception message:
+	 <The system cannot find the file specified. (0x80070002)>
+	Exception stack trace:
+	 <   at Windows.ApplicationModel.Package.get_InstalledLocation()
+   at Microsoft.Plugin.Program.Programs.PackageWrapper.GetWrapperFromPackage(Package package)>
+	Exception source:
+	 <Windows.ApplicationModel>
+	Exception target site:
+	 <Windows.Storage.StorageFolder get_InstalledLocation()>
+	Exception HResult:
+	 <-2147024894>
+2020-10-03 10:33:43.2764|ERROR|Microsoft.Plugin.Program.Programs.PackageWrapper.GetWrapperFromPackage|-------------------------- End exception --------------------------
+2020-10-03 10:33:43.6656|ERROR|Microsoft.Plugin.Program.Programs.Win32Program.LnkProgram|
+	Message: 	Error status: KNOWN
+		Program path: C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Administrative Tools\ODBC Data Sources (32-bit).lnk
+		Exception thrown in called method: Void GetDescription(System.Text.StringBuilder, Int32)
+		Possible interpretation of the error: An unexpected error occurred in the calling method LnkProgram
+		Possible resolution: Can be ignored and Wox should still continue, however the program may not be loaded
+	Area: Microsoft.Plugin.Program.Programs.Win32Program.LnkProgram
+	Source Path: S:\src\modules\launcher\Plugins\Microsoft.Plugin.Program\Programs\Win32Program.cs::475
+
+2020-10-03 10:33:43.6656|ERROR|Microsoft.Plugin.Program.Programs.Win32Program.LnkProgram|-------------------------- Begin exception --------------------------
+2020-10-03 10:33:43.6656|ERROR|Microsoft.Plugin.Program.Programs.Win32Program.LnkProgram|
+	Message:
+	 	Error status: KNOWN
+		Program path: C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Administrative Tools\ODBC Data Sources (32-bit).lnk
+		Exception thrown in called method: Void GetDescription(System.Text.StringBuilder, Int32)
+		Possible interpretation of the error: An unexpected error occurred in the calling method LnkProgram
+		Possible resolution: Can be ignored and Wox should still continue, however the program may not be loaded
+2020-10-03 10:33:43.6656|ERROR|Microsoft.Plugin.Program.Programs.Win32Program.LnkProgram|
+	Exception full name:
+	 <System.Runtime.InteropServices.COMException>
+	Exception message:
+	 <Error HRESULT E_FAIL has been returned from a call to a COM component.>
+	Exception stack trace:
+	 <   at Microsoft.Plugin.Program.Programs.ShellLinkHelper.IShellLinkW.GetDescription(StringBuilder pszName, Int32 cchMaxName)
+   at Microsoft.Plugin.Program.Programs.ShellLinkHelper.RetrieveTargetPath(String path)
+   at Microsoft.Plugin.Program.Programs.Win32Program.LnkProgram(String path)>
+	Exception source:
+	 <Microsoft.Plugin.Program>
+	Exception target site:
+	 <Void GetDescription(System.Text.StringBuilder, Int32)>
+	Exception HResult:
+	 <-2147467259>
+2020-10-03 10:33:43.6656|ERROR|Microsoft.Plugin.Program.Programs.Win32Program.LnkProgram|-------------------------- End exception --------------------------
+2020-10-03 10:33:43.7111|ERROR|Microsoft.Plugin.Program.Programs.Win32Program.LnkProgram|
+	Message: 	Error status: KNOWN
+		Program path: C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Administrative Tools\System Configuration.lnk
+		Exception thrown in called method: Void GetDescription(System.Text.StringBuilder, Int32)
+		Possible interpretation of the error: An unexpected error occurred in the calling method LnkProgram
+		Possible resolution: Can be ignored and Wox should still continue, however the program may not be loaded
+	Area: Microsoft.Plugin.Program.Programs.Win32Program.LnkProgram
+	Source Path: S:\src\modules\launcher\Plugins\Microsoft.Plugin.Program\Programs\Win32Program.cs::475
+
+2020-10-03 10:33:43.7111|ERROR|Microsoft.Plugin.Program.Programs.Win32Program.LnkProgram|-------------------------- Begin exception --------------------------
+2020-10-03 10:33:43.7111|ERROR|Microsoft.Plugin.Program.Programs.Win32Program.LnkProgram|
+	Message:
+	 	Error status: KNOWN
+		Program path: C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Administrative Tools\System Configuration.lnk
+		Exception thrown in called method: Void GetDescription(System.Text.StringBuilder, Int32)
+		Possible interpretation of the error: An unexpected error occurred in the calling method LnkProgram
+		Possible resolution: Can be ignored and Wox should still continue, however the program may not be loaded
+2020-10-03 10:33:43.7111|ERROR|Microsoft.Plugin.Program.Programs.Win32Program.LnkProgram|
+	Exception full name:
+	 <System.Runtime.InteropServices.COMException>
+	Exception message:
+	 <Error HRESULT E_FAIL has been returned from a call to a COM component.>
+	Exception stack trace:
+	 <   at Microsoft.Plugin.Program.Programs.ShellLinkHelper.IShellLinkW.GetDescription(StringBuilder pszName, Int32 cchMaxName)
+   at Microsoft.Plugin.Program.Programs.ShellLinkHelper.RetrieveTargetPath(String path)
+   at Microsoft.Plugin.Program.Programs.Win32Program.LnkProgram(String path)>
+	Exception source:
+	 <Microsoft.Plugin.Program>
+	Exception target site:
+	 <Void GetDescription(System.Text.StringBuilder, Int32)>
+	Exception HResult:
+	 <-2147467259>
+2020-10-03 10:33:43.7111|ERROR|Microsoft.Plugin.Program.Programs.Win32Program.LnkProgram|-------------------------- End exception --------------------------
+2020-10-03 10:33:47.5146|INFO|Wox.Infrastructure.Stopwatch.Normal|
+	Message: |Microsoft.Plugin.Program.Main|Win32Program index cost <4852ms>
+	Area: Wox.Infrastructure.Stopwatch.Normal
+	Source Path: S:\src\modules\launcher\Wox.Infrastructure\Stopwatch.cs::40
+
+2020-10-03 10:33:47.5146|INFO|Wox.Infrastructure.Stopwatch.Normal|
+	Message: |Microsoft.Plugin.Program.Main|Win32Program index cost <4853ms>
+	Area: Wox.Infrastructure.Stopwatch.Normal
+	Source Path: S:\src\modules\launcher\Wox.Infrastructure\Stopwatch.cs::40
+
+2020-10-03 10:33:47.5466|INFO|Wox.Infrastructure.Storage.PluginJsonStorage`1[[Microsoft.Plugin.Shell.ShellPluginSettings, Microsoft.Plugin.Shell, Version=0.23.0.0, Culture=neutral, PublicKeyToken=null]].Load|
+	Message: Deleting cached data at <C:\Users\Lior\AppData\Local\Microsoft\PowerToys\PowerToys Run\Settings\Plugins\Microsoft.Plugin.Shell\ShellPluginSettings.json>
+	Area: Wox.Infrastructure.Storage.PluginJsonStorage`1[Microsoft.Plugin.Shell.ShellPluginSettings].Load
+	Source Path: S:\src\modules\launcher\Wox.Infrastructure\Storage\JsonStorage`1.cs::54
+
+2020-10-03 10:33:47.5466|INFO|Wox.Infrastructure.Storage.PluginJsonStorage`1[[Microsoft.Plugin.Shell.ShellPluginSettings, Microsoft.Plugin.Shell, Version=0.23.0.0, Culture=neutral, PublicKeyToken=null]].Save|
+	Message: Saving cached data at <C:\Users\Lior\AppData\Local\Microsoft\PowerToys\PowerToys Run\Settings\Plugins\Microsoft.Plugin.Shell\ShellPluginSettings.json>
+	Area: Wox.Infrastructure.Storage.PluginJsonStorage`1[Microsoft.Plugin.Shell.ShellPluginSettings].Save
+	Source Path: S:\src\modules\launcher\Wox.Infrastructure\Storage\JsonStorage`1.cs::127
+
+2020-10-03 10:33:47.5755|INFO|Wox.Infrastructure.Storage.PluginJsonStorage`1[[Microsoft.Plugin.Uri.UriSettings, Microsoft.Plugin.Uri, Version=0.23.0.0, Culture=neutral, PublicKeyToken=null]].Load|
+	Message: Deleting cached data at <C:\Users\Lior\AppData\Local\Microsoft\PowerToys\PowerToys Run\Settings\Plugins\Microsoft.Plugin.Uri\UriSettings.json>
+	Area: Wox.Infrastructure.Storage.PluginJsonStorage`1[Microsoft.Plugin.Uri.UriSettings].Load
+	Source Path: S:\src\modules\launcher\Wox.Infrastructure\Storage\JsonStorage`1.cs::54
+
+2020-10-03 10:33:47.5755|INFO|Wox.Infrastructure.Storage.PluginJsonStorage`1[[Microsoft.Plugin.Uri.UriSettings, Microsoft.Plugin.Uri, Version=0.23.0.0, Culture=neutral, PublicKeyToken=null]].Save|
+	Message: Saving cached data at <C:\Users\Lior\AppData\Local\Microsoft\PowerToys\PowerToys Run\Settings\Plugins\Microsoft.Plugin.Uri\UriSettings.json>
+	Area: Wox.Infrastructure.Storage.PluginJsonStorage`1[Microsoft.Plugin.Uri.UriSettings].Save
+	Source Path: S:\src\modules\launcher\Wox.Infrastructure\Storage\JsonStorage`1.cs::127
+
+2020-10-03 10:33:47.5975|INFO|Wox.Infrastructure.Storage.WoxJsonStorage`1[[PowerLauncher.Storage.QueryHistory, PowerLauncher, Version=0.23.0.0, Culture=neutral, PublicKeyToken=null]].Load|
+	Message: Deleting cached data at <C:\Users\Lior\AppData\Local\Microsoft\PowerToys\PowerToys Run\Settings\QueryHistory.json>
+	Area: Wox.Infrastructure.Storage.WoxJsonStorage`1[PowerLauncher.Storage.QueryHistory].Load
+	Source Path: S:\src\modules\launcher\Wox.Infrastructure\Storage\JsonStorage`1.cs::54
+
+2020-10-03 10:33:47.5975|INFO|Wox.Infrastructure.Storage.WoxJsonStorage`1[[PowerLauncher.Storage.QueryHistory, PowerLauncher, Version=0.23.0.0, Culture=neutral, PublicKeyToken=null]].Save|
+	Message: Saving cached data at <C:\Users\Lior\AppData\Local\Microsoft\PowerToys\PowerToys Run\Settings\QueryHistory.json>
+	Area: Wox.Infrastructure.Storage.WoxJsonStorage`1[PowerLauncher.Storage.QueryHistory].Save
+	Source Path: S:\src\modules\launcher\Wox.Infrastructure\Storage\JsonStorage`1.cs::127
+
+2020-10-03 10:33:47.6014|INFO|Wox.Infrastructure.Storage.WoxJsonStorage`1[[PowerLauncher.Storage.UserSelectedRecord, PowerLauncher, Version=0.23.0.0, Culture=neutral, PublicKeyToken=null]].Load|
+	Message: Deleting cached data at <C:\Users\Lior\AppData\Local\Microsoft\PowerToys\PowerToys Run\Settings\UserSelectedRecord.json>
+	Area: Wox.Infrastructure.Storage.WoxJsonStorage`1[PowerLauncher.Storage.UserSelectedRecord].Load
+	Source Path: S:\src\modules\launcher\Wox.Infrastructure\Storage\JsonStorage`1.cs::54
+
+2020-10-03 10:33:47.6014|INFO|Wox.Infrastructure.Storage.WoxJsonStorage`1[[PowerLauncher.Storage.UserSelectedRecord, PowerLauncher, Version=0.23.0.0, Culture=neutral, PublicKeyToken=null]].Save|
+	Message: Saving cached data at <C:\Users\Lior\AppData\Local\Microsoft\PowerToys\PowerToys Run\Settings\UserSelectedRecord.json>
+	Area: Wox.Infrastructure.Storage.WoxJsonStorage`1[PowerLauncher.Storage.UserSelectedRecord].Save
+	Source Path: S:\src\modules\launcher\Wox.Infrastructure\Storage\JsonStorage`1.cs::127
+
+2020-10-03 10:33:47.6014|INFO|Wox.Infrastructure.Storage.WoxJsonStorage`1[[PowerLauncher.Storage.TopMostRecord, PowerLauncher, Version=0.23.0.0, Culture=neutral, PublicKeyToken=null]].Load|
+	Message: Deleting cached data at <C:\Users\Lior\AppData\Local\Microsoft\PowerToys\PowerToys Run\Settings\TopMostRecord.json>
+	Area: Wox.Infrastructure.Storage.WoxJsonStorage`1[PowerLauncher.Storage.TopMostRecord].Load
+	Source Path: S:\src\modules\launcher\Wox.Infrastructure\Storage\JsonStorage`1.cs::54
+
+2020-10-03 10:33:47.6014|INFO|Wox.Infrastructure.Storage.WoxJsonStorage`1[[PowerLauncher.Storage.TopMostRecord, PowerLauncher, Version=0.23.0.0, Culture=neutral, PublicKeyToken=null]].Save|
+	Message: Saving cached data at <C:\Users\Lior\AppData\Local\Microsoft\PowerToys\PowerToys Run\Settings\TopMostRecord.json>
+	Area: Wox.Infrastructure.Storage.WoxJsonStorage`1[PowerLauncher.Storage.TopMostRecord].Save
+	Source Path: S:\src\modules\launcher\Wox.Infrastructure\Storage\JsonStorage`1.cs::127
+
+2020-10-03 10:33:47.9368|INFO|Wox.Core.Plugin.PluginManager+<>c__DisplayClass22_0.InitializePlugins|
+	Message: Total init cost for <Calculator> is <19ms>
+	Area: Wox.Core.Plugin.PluginManager+<>c__DisplayClass22_0.InitializePlugins
+	Source Path: S:\src\modules\launcher\Wox.Core\Plugin\PluginManager.cs::107
+
+2020-10-03 10:33:47.9368|INFO|Wox.Infrastructure.Storage.PluginJsonStorage`1[[Microsoft.Plugin.Indexer.IndexerSettings, Microsoft.Plugin.Indexer, Version=0.23.0.0, Culture=neutral, PublicKeyToken=null]].Load|
+	Message: Deleting cached data at <C:\Users\Lior\AppData\Local\Microsoft\PowerToys\PowerToys Run\Settings\Plugins\Microsoft.Plugin.Indexer\IndexerSettings.json>
+	Area: Wox.Infrastructure.Storage.PluginJsonStorage`1[Microsoft.Plugin.Indexer.IndexerSettings].Load
+	Source Path: S:\src\modules\launcher\Wox.Infrastructure\Storage\JsonStorage`1.cs::54
+
+2020-10-03 10:33:47.9368|INFO|Wox.Infrastructure.Storage.PluginJsonStorage`1[[Microsoft.Plugin.Folder.FolderSettings, Microsoft.Plugin.Folder, Version=0.23.0.0, Culture=neutral, PublicKeyToken=null]].Load|
+	Message: Deleting cached data at <C:\Users\Lior\AppData\Local\Microsoft\PowerToys\PowerToys Run\Settings\Plugins\Microsoft.Plugin.Folder\FolderSettings.json>
+	Area: Wox.Infrastructure.Storage.PluginJsonStorage`1[Microsoft.Plugin.Folder.FolderSettings].Load
+	Source Path: S:\src\modules\launcher\Wox.Infrastructure\Storage\JsonStorage`1.cs::54
+
+2020-10-03 10:33:47.9368|INFO|Wox.Core.Plugin.PluginManager+<>c__DisplayClass22_0.InitializePlugins|
+	Message: Total init cost for <Shell> is <36ms>
+	Area: Wox.Core.Plugin.PluginManager+<>c__DisplayClass22_0.InitializePlugins
+	Source Path: S:\src\modules\launcher\Wox.Core\Plugin\PluginManager.cs::107
+
+2020-10-03 10:33:47.9368|INFO|Wox.Core.Plugin.PluginManager+<>c__DisplayClass22_0.InitializePlugins|
+	Message: Total init cost for <Window Walker> is <19ms>
+	Area: Wox.Core.Plugin.PluginManager+<>c__DisplayClass22_0.InitializePlugins
+	Source Path: S:\src\modules\launcher\Wox.Core\Plugin\PluginManager.cs::107
+
+2020-10-03 10:33:47.9368|INFO|Wox.Core.Plugin.PluginManager+<>c__DisplayClass22_0.InitializePlugins|
+	Message: Total init cost for <Windows Uri Handler> is <29ms>
+	Area: Wox.Core.Plugin.PluginManager+<>c__DisplayClass22_0.InitializePlugins
+	Source Path: S:\src\modules\launcher\Wox.Core\Plugin\PluginManager.cs::107
+
+2020-10-03 10:33:47.9368|INFO|Wox.Infrastructure.Storage.PluginJsonStorage`1[[Microsoft.Plugin.Indexer.IndexerSettings, Microsoft.Plugin.Indexer, Version=0.23.0.0, Culture=neutral, PublicKeyToken=null]].Save|
+	Message: Saving cached data at <C:\Users\Lior\AppData\Local\Microsoft\PowerToys\PowerToys Run\Settings\Plugins\Microsoft.Plugin.Indexer\IndexerSettings.json>
+	Area: Wox.Infrastructure.Storage.PluginJsonStorage`1[Microsoft.Plugin.Indexer.IndexerSettings].Save
+	Source Path: S:\src\modules\launcher\Wox.Infrastructure\Storage\JsonStorage`1.cs::127
+
+2020-10-03 10:33:47.9368|INFO|Wox.Infrastructure.Storage.PluginJsonStorage`1[[Microsoft.Plugin.Folder.FolderSettings, Microsoft.Plugin.Folder, Version=0.23.0.0, Culture=neutral, PublicKeyToken=null]].Save|
+	Message: Saving cached data at <C:\Users\Lior\AppData\Local\Microsoft\PowerToys\PowerToys Run\Settings\Plugins\Microsoft.Plugin.Folder\FolderSettings.json>
+	Area: Wox.Infrastructure.Storage.PluginJsonStorage`1[Microsoft.Plugin.Folder.FolderSettings].Save
+	Source Path: S:\src\modules\launcher\Wox.Infrastructure\Storage\JsonStorage`1.cs::127
+
+2020-10-03 10:33:47.9368|INFO|Wox.Core.Plugin.PluginManager+<>c__DisplayClass22_0.InitializePlugins|
+	Message: Total init cost for <Windows Indexer> is <18ms>
+	Area: Wox.Core.Plugin.PluginManager+<>c__DisplayClass22_0.InitializePlugins
+	Source Path: S:\src\modules\launcher\Wox.Core\Plugin\PluginManager.cs::107
+
+2020-10-03 10:33:47.9450|INFO|Wox.Core.Plugin.PluginManager+<>c__DisplayClass22_0.InitializePlugins|
+	Message: Total init cost for <Folder> is <21ms>
+	Area: Wox.Core.Plugin.PluginManager+<>c__DisplayClass22_0.InitializePlugins
+	Source Path: S:\src\modules\launcher\Wox.Core\Plugin\PluginManager.cs::107
+
+2020-10-03 10:33:47.9928|INFO|Wox.Core.Plugin.PluginManager+<>c__DisplayClass22_0.InitializePlugins|
+	Message: Total init cost for <Program> is <5019ms>
+	Area: Wox.Core.Plugin.PluginManager+<>c__DisplayClass22_0.InitializePlugins
+	Source Path: S:\src\modules\launcher\Wox.Core\Plugin\PluginManager.cs::107
+
+2020-10-03 10:33:48.3378|INFO|PowerLauncher.App.OnStartup|
+	Message: End PowerToys Run startup ----------------------------------------------------  
+	Area: PowerLauncher.App.OnStartup
+	Source Path: S:\src\modules\launcher\PowerLauncher\App.xaml.cs::122
+
+2020-10-03 10:33:48.3378|INFO|Wox.Infrastructure.Stopwatch.Normal|
+	Message: |App.OnStartup|Startup cost <6848ms>
+	Area: Wox.Infrastructure.Stopwatch.Normal
+	Source Path: S:\src\modules\launcher\Wox.Infrastructure\Stopwatch.cs::40
+
