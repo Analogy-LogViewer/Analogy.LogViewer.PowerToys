@@ -7,7 +7,7 @@
     <img src="https://img.shields.io/github/issues/Analogy-LogViewer/Analogy.LogViewer.PowerToys" alt="Issues" />
 </a>
 ![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/Analogy-LogViewer/Analogy.LogViewer.PowerToys)
-<a href="https://github.com/Analogy-LogViewer/Analogy.LogViewer.PowerToys/blob/master/LICENSE">
+<a href="https://github.com/Analogy-LogViewer/Analogy.LogViewer.PowerToys/blob/main/LICENSE">
     <img src="https://img.shields.io/github/license/Analogy-LogViewer/Analogy.LogViewer.PowerToys" alt="License" />
 </a>
 [![Nuget](https://img.shields.io/nuget/v/Analogy.LogViewer.PowerToys)](https://www.nuget.org/packages/Analogy.LogViewer.PowerToys/) 
