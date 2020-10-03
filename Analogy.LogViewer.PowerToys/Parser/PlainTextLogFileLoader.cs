@@ -1,12 +1,10 @@
-﻿using System;
+﻿using Analogy.Interfaces;
+using Analogy.Interfaces.DataTypes;
+using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using Analogy.Interfaces;
-using Analogy.Interfaces.DataTypes;
-using Microsoft.VisualBasic.CompilerServices;
 
 namespace Analogy.LogViewer.PowerToys.Parser
 {
@@ -57,6 +55,7 @@ namespace Analogy.LogViewer.PowerToys.Parser
             List<AnalogyLogMessage> messages = new List<AnalogyLogMessage>();
             try
             {
+                AnalogyLogMessage entry = null;
                 using (var stream = File.OpenRead(fileName))
                 {
                     using (var reader = new StreamReader(stream))
@@ -64,14 +63,23 @@ namespace Analogy.LogViewer.PowerToys.Parser
                         while (!reader.EndOfStream)
                         {
                             var line = await reader.ReadLineAsync();
-                            var items = line.Split(_parser.splitters, StringSplitOptions.RemoveEmptyEntries);
-                            while (items.Length < _logFileSettings.ValidItemsCount)
+                            var items = line.Split(_parser.splitters, StringSplitOptions.None);
+
+                            if (items.Length == 4 && DateTime.TryParse(items[0], out var dateTime))
                             {
-                                line = line + Environment.NewLine + await reader.ReadLineAsync();
-                                items = line.Split(_parser.splitters, StringSplitOptions.RemoveEmptyEntries);
+                                if (entry != null)
+                                {
+                                    messages.Add(entry);
+                                }
+                                entry = _parser.Parse(line);
                             }
-                            var entry = _parser.Parse(line);
-                            messages.Add(entry);
+                            else if (entry != null)
+                            {
+                                if (entry.Text == "")
+                                    entry.Text = line;
+                                else
+                                    entry.Text += Environment.NewLine + line;
+                            }
                         }
                     }
                 }
