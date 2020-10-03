@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Analogy.LogViewer.Affirmations": {
+      "commandName": "Project"
+    },
+    "EXE": {
+      "commandName": "Executable",
+      "executablePath": "C:\\git\\Analogy.LogViewer\\Analogy\\bin\\Debug\\netcoreapp3.1\\Analogy.exe",
+      "workingDirectory": "C:\\git\\Analogy.LogViewer\\Analogy\\bin\\Debug\\netcoreapp3.1"
+    }
+  }
+}

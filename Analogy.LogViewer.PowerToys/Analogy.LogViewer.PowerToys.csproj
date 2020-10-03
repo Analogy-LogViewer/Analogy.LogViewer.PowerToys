@@ -1,0 +1,66 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+	<PropertyGroup>
+		<OutputType>Library</OutputType>
+		<TargetFrameworks>netcoreapp3.1</TargetFrameworks>
+		<UseWindowsForms>true</UseWindowsForms>
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+		<Authors>Lior Banai</Authors>
+		<Description>Analogy PowerToys log parser</Description>
+		<Copyright>Lior Banai © 2020</Copyright>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageProjectUrl>https://github.com/Analogy-LogViewer/Analogy.LogViewer.PowerToys</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/Analogy-LogViewer/Analogy.LogViewer.PowerToys</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageReleaseNotes>Analogy PowerToys log parser</PackageReleaseNotes>
+		<PackageIconUrl />
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<Version>1.0.0</Version>
+		<Company>Analogy.LogViewer</Company>
+		<GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
+		<PackageIcon>AnalogyPowerToys.png</PackageIcon>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Remove="_ReSharper.Caches\**" />
+		<EmbeddedResource Remove="_ReSharper.Caches\**" />
+		<None Remove="_ReSharper.Caches\**" />
+		<None Include="..\Assets\AnalogyPowerToys.png">
+		  <Pack>True</Pack>
+		  <PackagePath></PackagePath>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Analogy.LogViewer.Interfaces" Version="2.7.2" />
+		<PackageReference Include="Analogy.LogViewer.Template" Version="1.6.0" />
+		<PackageReference Include="Microsoft.Build.Tasks.Git" Version="1.0.0">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+		<PackageReference Include="System.Resources.Extensions" Version="4.6.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="Properties\Resources.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>Resources.resx</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Update="Properties\Resources.resx">
+	    <Generator>PublicResXFileCodeGenerator</Generator>
+	    <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+	  </EmbeddedResource>
+	</ItemGroup>
+
+</Project>
