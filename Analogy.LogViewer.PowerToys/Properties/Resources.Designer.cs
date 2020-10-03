@@ -9,6 +9,9 @@
 //------------------------------------------------------------------------------
 
 namespace Analogy.LogViewer.PowerToys.Properties {
+    using System;
+    
+    
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -36,7 +39,7 @@ namespace Analogy.LogViewer.PowerToys.Properties {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Analogy.LogViewer.Affirmations.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Analogy.LogViewer.PowerToys.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -60,9 +63,9 @@ namespace Analogy.LogViewer.PowerToys.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Affirmations {
+        public static System.Drawing.Bitmap powertoys {
             get {
-                object obj = ResourceManager.GetObject("Affirmations", resourceCulture);
+                object obj = ResourceManager.GetObject("powertoys", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -70,9 +73,9 @@ namespace Analogy.LogViewer.PowerToys.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Affirmations16x16 {
+        public static System.Drawing.Bitmap powertoys16x16 {
             get {
-                object obj = ResourceManager.GetObject("Affirmations16x16", resourceCulture);
+                object obj = ResourceManager.GetObject("powertoys16x16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -80,9 +83,9 @@ namespace Analogy.LogViewer.PowerToys.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Affirmations32x32 {
+        public static System.Drawing.Bitmap powertoys32x32 {
             get {
-                object obj = ResourceManager.GetObject("Affirmations32x32", resourceCulture);
+                object obj = ResourceManager.GetObject("powertoys32x32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
