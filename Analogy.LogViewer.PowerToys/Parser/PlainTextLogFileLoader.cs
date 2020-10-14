@@ -55,7 +55,7 @@ namespace Analogy.LogViewer.PowerToys.Parser
             List<AnalogyLogMessage> messages = new List<AnalogyLogMessage>();
             try
             {
-                AnalogyLogMessage entry = null;
+                AnalogyLogMessage? entry = null;
                 using (var stream = File.OpenRead(fileName))
                 {
                     using (var reader = new StreamReader(stream))

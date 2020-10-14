@@ -25,7 +25,7 @@ namespace Analogy.LogViewer.PowerToys.Managers
                         ObjectCreationHandling = ObjectCreationHandling.Replace
                     };
                     string data = File.ReadAllText(AffirmationsFileSetting);
-                    Settings = JsonConvert.DeserializeObject<AffirmationsSettings>(data, settings);
+                    Settings = JsonConvert.DeserializeObject<AffirmationsSettings>(data, settings)!;
                 }
                 catch (Exception ex)
                 {

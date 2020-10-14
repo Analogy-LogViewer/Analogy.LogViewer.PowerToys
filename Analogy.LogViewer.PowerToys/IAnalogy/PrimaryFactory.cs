@@ -14,8 +14,8 @@ namespace Analogy.LogViewer.PowerToys.IAnalogy
         public override IEnumerable<IAnalogyChangeLog> ChangeLog { get; set; } = ChangeLogList.GetChangeLog();
         public override IEnumerable<string> Contributors { get; set; } = new List<string> { "Lior Banai" };
         public override string About { get; set; } = "Analogy Log Parser for Microsoft PowerToys";
-        public override Image SmallImage { get; set; } = Resources.powertoys16x16;
-        public override Image LargeImage { get; set; } = Resources.powertoys32x32;
+        public override Image? SmallImage { get; set; } = Resources.powertoys16x16;
+        public override Image? LargeImage { get; set; } = Resources.powertoys32x32;
 
 
     }
