@@ -10,13 +10,13 @@ namespace Analogy.LogViewer.PowerToys.Managers
         private static readonly Lazy<UserSettingsManager> _instance =
             new Lazy<UserSettingsManager>(() => new UserSettingsManager());
         public static UserSettingsManager UserSettings { get; set; } = _instance.Value;
-        public string AffirmationsFileSetting { get; private set; } = "AnalogyAffirmationsSettings.json";
-        public AffirmationsSettings Settings { get; set; }
+        public string PowerToysSettingsFileSetting { get; private set; } = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Analogy.LogViewer", "AnalogyPowerToysSettings.json");
+        public PowerToysSettings Settings { get; set; }
 
 
         public UserSettingsManager()
         {
-            if (File.Exists(AffirmationsFileSetting))
+            if (File.Exists(PowerToysSettingsFileSetting))
             {
                 try
                 {
@@ -24,19 +24,19 @@ namespace Analogy.LogViewer.PowerToys.Managers
                     {
                         ObjectCreationHandling = ObjectCreationHandling.Replace
                     };
-                    string data = File.ReadAllText(AffirmationsFileSetting);
-                    Settings = JsonConvert.DeserializeObject<AffirmationsSettings>(data, settings)!;
+                    string data = File.ReadAllText(PowerToysSettingsFileSetting);
+                    Settings = JsonConvert.DeserializeObject<PowerToysSettings>(data, settings)!;
                 }
                 catch (Exception ex)
                 {
-                    LogManager.Instance.LogException("Error loading user setting file", ex, "Analogy Serilog Parser");
-                    Settings = new AffirmationsSettings();
+                    LogManager.Instance.LogException("Error loading user setting file", ex, "Analogy Power Toys Settings");
+                    Settings = new PowerToysSettings();
 
                 }
             }
             else
             {
-                Settings = new AffirmationsSettings();
+                Settings = new PowerToysSettings();
             }
 
         }
@@ -45,11 +45,11 @@ namespace Analogy.LogViewer.PowerToys.Managers
         {
             try
             {
-                File.WriteAllText(AffirmationsFileSetting, JsonConvert.SerializeObject(Settings));
+                File.WriteAllText(PowerToysSettingsFileSetting, JsonConvert.SerializeObject(Settings));
             }
             catch (Exception e)
             {
-                LogManager.Instance.LogException("Error saving settings: " + e.Message, e, "Analogy Serilog Parser");
+                LogManager.Instance.LogException("Error saving settings: " + e.Message, e, "Analogy Power Toys Settings");
             }
 
 
