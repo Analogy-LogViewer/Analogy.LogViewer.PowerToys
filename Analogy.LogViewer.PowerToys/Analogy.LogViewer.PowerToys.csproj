@@ -19,7 +19,7 @@
 		<PackageReleaseNotes>Analogy PowerToys log parser</PackageReleaseNotes>
 		<PackageIconUrl />
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-		<Version>0.1.4.1</Version>
+		<Version>0.1.5</Version>
 		<Company>Analogy.LogViewer</Company>
 		<GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
 		<PackageIcon>AnalogyPowerToys.png</PackageIcon>
@@ -39,7 +39,7 @@
 
 	<ItemGroup>
 		<PackageReference Include="Analogy.LogViewer.Interfaces" Version="2.8.2.5" />
-		<PackageReference Include="Analogy.LogViewer.RegexParser" Version="1.7.2" />
+		<PackageReference Include="Analogy.LogViewer.RegexParser" Version="1.7.4" />
 		<PackageReference Include="Analogy.LogViewer.Template" Version="1.7.0" />
 		<PackageReference Include="Microsoft.Build.Tasks.Git" Version="1.0.0">
 			<PrivateAssets>all</PrivateAssets>
@@ -50,7 +50,7 @@
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
 		<PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
-		<PackageReference Include="System.Resources.Extensions" Version="4.6.0" />
+		<PackageReference Include="System.Resources.Extensions" Version="5.0.0" />
 	</ItemGroup>
 
 	<ItemGroup>
