@@ -70,6 +70,7 @@ namespace Analogy.LogViewer.PowerToys.Parser
                                 if (entry != null)
                                 {
                                     messages.Add(entry);
+                                    entry = null;
                                 }
                                 entry = _parser.Parse(line);
                             }
@@ -85,6 +86,12 @@ namespace Analogy.LogViewer.PowerToys.Parser
                                 }
                             }
                         }
+                    }
+
+                    if (entry != null)
+                    {
+                        messages.Add(entry);
+
                     }
                 }
                 messagesHandler.AppendMessages(messages, fileName);
