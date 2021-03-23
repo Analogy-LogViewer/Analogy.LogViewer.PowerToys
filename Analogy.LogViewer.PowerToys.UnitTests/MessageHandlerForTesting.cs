@@ -1,4 +1,5 @@
 ﻿using Analogy.Interfaces;
+using Analogy.Interfaces.DataTypes;
 using System.Collections.Generic;
 
 namespace Analogy.LogViewer.PowerToys.UnitTests
@@ -18,6 +19,11 @@ namespace Analogy.LogViewer.PowerToys.UnitTests
         public void AppendMessages(List<AnalogyLogMessage> messages, string dataSource)
         {
             this.messages.AddRange(messages);
+        }
+
+        public void ReportFileReadProgress(AnalogyFileReadProgress progress)
+        {
+            //noop
         }
 
         public bool ForceNoFileCaching { get; set; }

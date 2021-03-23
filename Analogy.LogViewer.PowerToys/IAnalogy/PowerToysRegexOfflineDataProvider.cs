@@ -1,4 +1,5 @@
 ﻿using Analogy.Interfaces;
+using Analogy.Interfaces.DataTypes;
 using Analogy.LogViewer.RegexParser;
 using Analogy.LogViewer.RegexParser.IAnalogy;
 using System;
@@ -40,6 +41,11 @@ namespace Analogy.LogViewer.PowerToys.IAnalogy
         private class RemoveLeadingNewLine : ILogMessageCreatedHandler
         {
             private readonly ILogMessageCreatedHandler _messagesHandler;
+            public void ReportFileReadProgress(AnalogyFileReadProgress progress)
+            {
+                //noop
+            }
+
             public bool ForceNoFileCaching { get; set; }
             public bool DoNotAddToRecentHistory { get; set; }
             public RemoveLeadingNewLine(ILogMessageCreatedHandler nominalMessagesHandler)
