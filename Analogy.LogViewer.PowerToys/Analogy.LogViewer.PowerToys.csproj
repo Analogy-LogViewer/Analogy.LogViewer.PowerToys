@@ -19,7 +19,7 @@
 		<PackageReleaseNotes>Analogy PowerToys log parser</PackageReleaseNotes>
 		<PackageIconUrl />
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-		<Version>0.2.1</Version>
+		<Version>0.2.2</Version>
 		<Company>Analogy.LogViewer</Company>
 		<GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
 		<PackageIcon>AnalogyPowerToys.png</PackageIcon>
