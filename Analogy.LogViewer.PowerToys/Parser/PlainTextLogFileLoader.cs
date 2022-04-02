@@ -55,6 +55,7 @@ namespace Analogy.LogViewer.PowerToys.Parser
             List<AnalogyLogMessage> messages = new List<AnalogyLogMessage>();
             try
             {
+                long count = 0;
                 AnalogyLogMessage? entry = null;
                 using (var stream = File.OpenRead(fileName))
                 {
@@ -71,6 +72,8 @@ namespace Analogy.LogViewer.PowerToys.Parser
                                 {
                                     messages.Add(entry);
                                     entry = null;
+                                    count++;
+                                    messagesHandler.ReportFileReadProgress(new AnalogyFileReadProgress(AnalogyFileReadProgressType.Incremental, 1, count, count));
                                 }
                                 entry = _parser.Parse(line);
                             }
