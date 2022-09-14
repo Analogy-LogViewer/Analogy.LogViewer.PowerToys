@@ -20,7 +20,7 @@ namespace Analogy.LogViewer.PowerToys.IAnalogy
         public override Image? SmallImage { get; set; } = null;
 
 
-        public override Task InitializeDataProviderAsync(IAnalogyLogger logger)
+        public override Task InitializeDataProvider(IAnalogyLogger logger)
         {
             RegexParser.Managers.UserSettingsManager.UserSettings.Settings.FileOpenDialogFilters = "Plain log text file (*.txt)|*.txt";
             var regexPattern = new RegexPattern(@"(?<Date>\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2}.\d{4})\|(?<Level>\w+)\|(?<Source>.+)\|(?<Text>(?s).*)", "yyyy-MM-dd HH:mm:ss.ffff", "", new List<string> { "*.txt" });
@@ -29,7 +29,7 @@ namespace Analogy.LogViewer.PowerToys.IAnalogy
                 RegexParser.Managers.UserSettingsManager.UserSettings.Settings.RegexPatterns.Insert(0, regexPattern);
             }
 
-            return base.InitializeDataProviderAsync(logger);
+            return base.InitializeDataProvider(logger);
         }
 
         public override Task<IEnumerable<AnalogyLogMessage>> Process(string fileName, CancellationToken token,

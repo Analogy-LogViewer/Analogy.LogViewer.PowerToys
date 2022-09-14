@@ -13,7 +13,7 @@ namespace Analogy.LogViewer.PowerToys.UnitTests
         public async Task TestMethod1()
         {
             var parser = new OfflineDataProvider();
-            await parser.InitializeDataProviderAsync(null);
+            await parser.InitializeDataProvider(null);
             var results = await parser.Process("2020-10-03.txt", new CancellationToken(), new MessageHandlerForTesting());
             Assert.IsTrue(results.Count() == 61);
 
