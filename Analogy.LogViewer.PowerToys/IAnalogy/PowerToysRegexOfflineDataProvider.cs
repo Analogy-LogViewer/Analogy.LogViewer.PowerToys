@@ -32,7 +32,7 @@ namespace Analogy.LogViewer.PowerToys.IAnalogy
             return base.InitializeDataProvider(logger);
         }
 
-        public override Task<IEnumerable<AnalogyLogMessage>> Process(string fileName, CancellationToken token,
+        public override Task<IEnumerable<IAnalogyLogMessage>> Process(string fileName, CancellationToken token,
             ILogMessageCreatedHandler messagesHandler)
         {
             return base.Process(fileName, token, new RemoveLeadingNewLine(messagesHandler));
@@ -56,7 +56,7 @@ namespace Analogy.LogViewer.PowerToys.IAnalogy
             }
 
 
-            public void AppendMessage(AnalogyLogMessage message, string dataSource)
+            public void AppendMessage(IAnalogyLogMessage message, string dataSource)
             {
                 if (message.Text.StartsWith(Environment.NewLine))
                 {
@@ -65,7 +65,7 @@ namespace Analogy.LogViewer.PowerToys.IAnalogy
                 _messagesHandler.AppendMessage(message, dataSource);
             }
 
-            public void AppendMessages(List<AnalogyLogMessage> messages, string dataSource)
+            public void AppendMessages(List<IAnalogyLogMessage> messages, string dataSource)
             {
                 foreach (var msg in messages)
                 {

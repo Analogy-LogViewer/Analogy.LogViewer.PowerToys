@@ -39,7 +39,7 @@ namespace Analogy.LogViewer.PowerToys.IAnalogy
             };
             parser = new PlainTextLogFileLoader(LogParserSettings);
         }
-        public override Task<IEnumerable<AnalogyLogMessage>> Process(string fileName, CancellationToken token,
+        public override Task<IEnumerable<IAnalogyLogMessage>> Process(string fileName, CancellationToken token,
             ILogMessageCreatedHandler messagesHandler)
             => parser.Process(fileName, token, messagesHandler);
     }
