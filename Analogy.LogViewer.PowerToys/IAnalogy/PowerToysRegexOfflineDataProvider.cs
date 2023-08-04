@@ -2,6 +2,7 @@
 using Analogy.Interfaces.DataTypes;
 using Analogy.LogViewer.RegexParser;
 using Analogy.LogViewer.RegexParser.IAnalogy;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -16,11 +17,11 @@ namespace Analogy.LogViewer.PowerToys.IAnalogy
         public override string OptionalTitle { get; set; } = "PowerToys Regex offline logs";
         public override Guid Id { get; set; } = new Guid("4daa52fe-adcf-4a98-be47-090ba0e77b5f");
         public override string InitialFolderFullPath { get; set; } = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), @"AppData\Local\Microsoft\PowerToys\PowerToys Run\Logs");
-        public override Image? LargeImage { get; set; } = null;
-        public override Image? SmallImage { get; set; } = null;
+        public override Image? LargeImage { get; set; }
+        public override Image? SmallImage { get; set; }
 
 
-        public override Task InitializeDataProvider(IAnalogyLogger logger)
+        public override Task InitializeDataProvider(ILogger logger)
         {
             RegexParser.Managers.UserSettingsManager.UserSettings.Settings.FileOpenDialogFilters = "Plain log text file (*.txt)|*.txt";
             var regexPattern = new RegexPattern(@"(?<Date>\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2}.\d{4})\|(?<Level>\w+)\|(?<Source>.+)\|(?<Text>(?s).*)", "yyyy-MM-dd HH:mm:ss.ffff", "", new List<string> { "*.txt" });

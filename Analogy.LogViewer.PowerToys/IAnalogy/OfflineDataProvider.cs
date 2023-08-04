@@ -12,8 +12,8 @@ namespace Analogy.LogViewer.PowerToys.IAnalogy
 {
     public class OfflineDataProvider : Analogy.LogViewer.Template.OfflineDataProvider
     {
-        public override Image? SmallImage { get; set; } = null;
-        public override Image? LargeImage { get; set; } = null;
+        public override Image? SmallImage { get; set; }
+        public override Image? LargeImage { get; set; }
         public override string? OptionalTitle { get; set; } = "PowerToys Parser";
         public override string FileOpenDialogFilters { get; set; } = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
         public override IEnumerable<string> SupportFormats { get; set; } = new List<string> { "*.txt" };

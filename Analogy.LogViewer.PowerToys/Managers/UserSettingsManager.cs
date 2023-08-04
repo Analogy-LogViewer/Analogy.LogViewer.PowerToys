@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using Analogy.LogViewer.Template.Managers;
+using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 
 namespace Analogy.LogViewer.PowerToys.Managers
@@ -29,7 +30,7 @@ namespace Analogy.LogViewer.PowerToys.Managers
                 }
                 catch (Exception ex)
                 {
-                    LogManager.Instance.LogException("Error loading user setting file", ex, "Analogy Power Toys Settings");
+                    LogManager.Instance.LogError(ex, "Error loading user setting file", ex, "Analogy Power Toys Settings");
                     Settings = new PowerToysSettings();
 
                 }
@@ -49,7 +50,7 @@ namespace Analogy.LogViewer.PowerToys.Managers
             }
             catch (Exception e)
             {
-                LogManager.Instance.LogException("Error saving settings: " + e.Message, e, "Analogy Power Toys Settings");
+                LogManager.Instance.LogError(e, "Error saving settings: " + e.Message, e, "Analogy Power Toys Settings");
             }
 
 
