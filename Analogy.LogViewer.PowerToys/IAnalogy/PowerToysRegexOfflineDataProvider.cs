@@ -20,7 +20,6 @@ namespace Analogy.LogViewer.PowerToys.IAnalogy
         public override Image? LargeImage { get; set; }
         public override Image? SmallImage { get; set; }
 
-
         public override Task InitializeDataProvider(ILogger logger)
         {
             RegexParser.Managers.UserSettingsManager.UserSettings.Settings.FileOpenDialogFilters = "Plain log text file (*.txt)|*.txt";
@@ -56,7 +55,6 @@ namespace Analogy.LogViewer.PowerToys.IAnalogy
                 DoNotAddToRecentHistory = _messagesHandler.DoNotAddToRecentHistory;
             }
 
-
             public void AppendMessage(IAnalogyLogMessage message, string dataSource)
             {
                 if (message.Text.StartsWith(Environment.NewLine))
@@ -78,7 +76,6 @@ namespace Analogy.LogViewer.PowerToys.IAnalogy
 
                 _messagesHandler.AppendMessages(messages, dataSource);
             }
-
         }
     }
 }

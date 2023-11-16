@@ -25,7 +25,7 @@ namespace Analogy.LogViewer.PowerToys.Parser
                     AnalogyLogLevel.Critical, AnalogyLogClass.General, "Analogy", "None")
                 {
                     Source = "Analogy",
-                    Module = System.Diagnostics.Process.GetCurrentProcess().ProcessName
+                    Module = System.Diagnostics.Process.GetCurrentProcess().ProcessName,
                 };
                 messagesHandler.AppendMessage(empty, GetFileNameAsDataSource(fileName));
                 return new List<AnalogyLogMessage> { empty };
@@ -36,7 +36,7 @@ namespace Analogy.LogViewer.PowerToys.Parser
                     AnalogyLogLevel.Critical, AnalogyLogClass.General, "Analogy", "None")
                 {
                     Source = "Analogy",
-                    Module = System.Diagnostics.Process.GetCurrentProcess().ProcessName
+                    Module = System.Diagnostics.Process.GetCurrentProcess().ProcessName,
                 };
                 messagesHandler.AppendMessage(empty, GetFileNameAsDataSource(fileName));
                 return new List<AnalogyLogMessage> { empty };
@@ -47,7 +47,7 @@ namespace Analogy.LogViewer.PowerToys.Parser
                     AnalogyLogLevel.Critical, AnalogyLogClass.General, "Analogy", "None")
                 {
                     Source = "Analogy",
-                    Module = System.Diagnostics.Process.GetCurrentProcess().ProcessName
+                    Module = System.Diagnostics.Process.GetCurrentProcess().ProcessName,
                 };
                 messagesHandler.AppendMessage(empty, GetFileNameAsDataSource(fileName));
                 return new List<AnalogyLogMessage> { empty };
@@ -94,7 +94,6 @@ namespace Analogy.LogViewer.PowerToys.Parser
                     if (entry != null)
                     {
                         messages.Add(entry);
-
                     }
                 }
                 messagesHandler.AppendMessages(messages, fileName);
@@ -106,7 +105,7 @@ namespace Analogy.LogViewer.PowerToys.Parser
                     AnalogyLogLevel.Critical, AnalogyLogClass.General, "Analogy", "None")
                 {
                     Source = "Analogy",
-                    Module = System.Diagnostics.Process.GetCurrentProcess().ProcessName
+                    Module = System.Diagnostics.Process.GetCurrentProcess().ProcessName,
                 };
                 messagesHandler.AppendMessage(empty, GetFileNameAsDataSource(fileName));
                 return new List<AnalogyLogMessage> { empty };

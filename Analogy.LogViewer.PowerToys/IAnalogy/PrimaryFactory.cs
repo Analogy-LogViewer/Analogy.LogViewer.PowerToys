@@ -1,8 +1,8 @@
-﻿using System;
+﻿using Analogy.Interfaces;
+using Analogy.LogViewer.PowerToys.Properties;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
-using Analogy.Interfaces;
-using Analogy.LogViewer.PowerToys.Properties;
 
 namespace Analogy.LogViewer.PowerToys.IAnalogy
 {
@@ -16,7 +16,5 @@ namespace Analogy.LogViewer.PowerToys.IAnalogy
         public override string About { get; set; } = "Analogy Log Parser for Microsoft PowerToys";
         public override Image? SmallImage { get; set; } = Resources.powertoys16x16;
         public override Image? LargeImage { get; set; } = Resources.powertoys32x32;
-
-
     }
 }

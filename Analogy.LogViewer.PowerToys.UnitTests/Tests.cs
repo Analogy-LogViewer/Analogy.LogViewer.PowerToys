@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Analogy.LogViewer.PowerToys.UnitTests
 {
     [TestClass]
-    public class UnitTests
+    public class Tests
     {
         [TestMethod]
         public async Task TestMethod1()
@@ -16,8 +16,6 @@ namespace Analogy.LogViewer.PowerToys.UnitTests
             await parser.InitializeDataProvider(null);
             var results = await parser.Process("2020-10-03.txt", new CancellationToken(), new MessageHandlerForTesting());
             Assert.IsTrue(results.Count() == 61);
-
-
         }
     }
 }

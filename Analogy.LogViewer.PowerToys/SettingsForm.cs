@@ -8,6 +8,5 @@ namespace Analogy.LogViewer.PowerToys
         {
             InitializeComponent();
         }
-
     }
 }

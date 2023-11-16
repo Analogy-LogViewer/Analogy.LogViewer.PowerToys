@@ -1,8 +1,8 @@
-﻿using System;
-using System.IO;
-using Analogy.LogViewer.Template.Managers;
+﻿using Analogy.LogViewer.Template.Managers;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
+using System;
+using System.IO;
 
 namespace Analogy.LogViewer.PowerToys.Managers
 {
@@ -14,7 +14,6 @@ namespace Analogy.LogViewer.PowerToys.Managers
         public string PowerToysSettingsFileSetting { get; private set; } = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Analogy.LogViewer", "AnalogyPowerToysSettings.json");
         public PowerToysSettings Settings { get; set; }
 
-
         public UserSettingsManager()
         {
             if (File.Exists(PowerToysSettingsFileSetting))
@@ -23,7 +22,7 @@ namespace Analogy.LogViewer.PowerToys.Managers
                 {
                     var settings = new JsonSerializerSettings
                     {
-                        ObjectCreationHandling = ObjectCreationHandling.Replace
+                        ObjectCreationHandling = ObjectCreationHandling.Replace,
                     };
                     string data = File.ReadAllText(PowerToysSettingsFileSetting);
                     Settings = JsonConvert.DeserializeObject<PowerToysSettings>(data, settings)!;
@@ -32,14 +31,12 @@ namespace Analogy.LogViewer.PowerToys.Managers
                 {
                     LogManager.Instance.LogError(ex, "Error loading user setting file", ex, "Analogy Power Toys Settings");
                     Settings = new PowerToysSettings();
-
                 }
             }
             else
             {
                 Settings = new PowerToysSettings();
             }
-
         }
 
         public void Save()
@@ -52,8 +49,6 @@ namespace Analogy.LogViewer.PowerToys.Managers
             {
                 LogManager.Instance.LogError(e, "Error saving settings: " + e.Message, e, "Analogy Power Toys Settings");
             }
-
-
         }
     }
 }

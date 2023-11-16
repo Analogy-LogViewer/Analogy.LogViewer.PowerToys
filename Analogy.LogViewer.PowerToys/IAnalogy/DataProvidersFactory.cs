@@ -1,6 +1,6 @@
-﻿using System;
+﻿using Analogy.Interfaces;
+using System;
 using System.Collections.Generic;
-using Analogy.Interfaces;
 
 namespace Analogy.LogViewer.PowerToys.IAnalogy
 {
@@ -11,7 +11,7 @@ namespace Analogy.LogViewer.PowerToys.IAnalogy
         public override IEnumerable<IAnalogyDataProvider> DataProviders { get; set; } = new List<IAnalogyDataProvider>
         {
             //new PowerToysRegexOfflineDataProvider(), 
-            new OfflineDataProvider()
+            new OfflineDataProvider(),
         };
     }
 }

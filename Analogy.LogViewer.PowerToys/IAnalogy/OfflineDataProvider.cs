@@ -27,15 +27,15 @@ namespace Analogy.LogViewer.PowerToys.IAnalogy
             LogParserSettings = new SplitterLogParserSettings
             {
                 Splitter = "|",
-                SupportedFilesExtensions = new List<string> {"*.txt"},
+                SupportedFilesExtensions = new List<string> { "*.txt"},
                 Maps = new Dictionary<int, AnalogyLogMessagePropertyName>
                 {
-                    {0, AnalogyLogMessagePropertyName.Date},
-                    {1, AnalogyLogMessagePropertyName.Level},
-                    {2, AnalogyLogMessagePropertyName.Source},
-                    {3, AnalogyLogMessagePropertyName.Text}
+                    { 0, AnalogyLogMessagePropertyName.Date},
+                    { 1, AnalogyLogMessagePropertyName.Level},
+                    { 2, AnalogyLogMessagePropertyName.Source},
+                    { 3, AnalogyLogMessagePropertyName.Text},
                 },
-                IsConfigured = true
+                IsConfigured = true,
             };
             parser = new PlainTextLogFileLoader(LogParserSettings);
         }
