@@ -9,7 +9,7 @@
 		<PackageProjectUrl>https://github.com/Analogy-LogViewer/Analogy.LogViewer.PowerToys</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/Analogy-LogViewer/Analogy.LogViewer.PowerToys</RepositoryUrl>
 		<PackageReleaseNotes>Analogy PowerToys log parser</PackageReleaseNotes>
-		<Version>0.16.0</Version>
+		<Version>0.17.0</Version>
 		<Company>Analogy.LogViewer</Company>
 		<PackageIcon>AnalogyPowerToys.png</PackageIcon>
 	</PropertyGroup>
@@ -25,11 +25,11 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Analogy.LogViewer.Interfaces" Version="5.0.3" />
-		<PackageReference Include="Analogy.LogViewer.RegexParser" Version="5.0.3" />
-		<PackageReference Include="Analogy.LogViewer.Template" Version="5.0.3" />
+		<PackageReference Include="Analogy.LogViewer.Interfaces" Version="6.0.0.1" />
+		<PackageReference Include="Analogy.LogViewer.RegexParser" Version="6.0.0" />
+		<PackageReference Include="Analogy.LogViewer.Template" Version="6.0.0" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-		<PackageReference Include="System.Resources.Extensions" Version="7.0.0" />
+		<PackageReference Include="System.Resources.Extensions" Version="8.0.0" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Compile Update="Properties\Resources.Designer.cs">
