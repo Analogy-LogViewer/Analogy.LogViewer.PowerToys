@@ -27,7 +27,7 @@
 	<ItemGroup>
 		<PackageReference Include="Analogy.LogViewer.Interfaces" Version="5.0.3" />
 		<PackageReference Include="Analogy.LogViewer.RegexParser" Version="5.0.3" />
-		<PackageReference Include="Analogy.LogViewer.Template" Version="5.0.3" />
+		<PackageReference Include="Analogy.LogViewer.Template" Version="6.0.0" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
 		<PackageReference Include="System.Resources.Extensions" Version="7.0.0" />
 	</ItemGroup>
